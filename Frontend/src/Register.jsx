@@ -23,7 +23,7 @@ function Register() {
             setErrors({ username: '', password: '', repeatPassword: '' });
             setSuccess('');
             try {
-                const response = await fetch(dotenv.config.REGISTRY_LINK, {
+                const response = await fetch(process.env.REGISTRY_LINK, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

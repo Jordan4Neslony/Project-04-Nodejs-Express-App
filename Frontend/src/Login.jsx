@@ -20,7 +20,7 @@ function Login() {
         setSuccess('');
         
         try {
-            const response = await fetch(dotenv.config.LOGIN_LINK, {
+            const response = await fetch(process.envLOGIN_LINK, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

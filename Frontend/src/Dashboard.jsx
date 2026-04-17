@@ -25,7 +25,7 @@ function Dashboard() {
 
     const fetchGames = async () => {
         try {
-            const response = await fetch(dotenv.config.GAMES_LINK);
+            const response = await fetch(process.env.GAMES_LINK);
             if (!response.ok) {
                 throw new Error('Failed to fetch games');
             }
