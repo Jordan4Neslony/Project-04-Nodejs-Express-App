@@ -2,15 +2,11 @@ import cors from "cors"
 import express from "express"
 import mongoose from "mongoose"
 import bcrypt from "bcrypt"
-import dotenv from "dotenv"
-
-dotenv.config({ path: './dotenv.env' })
-
 
 const app = express()
 
 app.use(cors({
-    origin: [process.env.BACKEND_LINK, process.env.FRONTEND_LINK]
+    origin: [process.env.FRONTEND_LINK]
 }))
 
 app.use(express.json())

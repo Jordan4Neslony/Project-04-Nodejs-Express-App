@@ -2,7 +2,7 @@ import './Dashboard.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ListItem from './assets/ListItem';
-import dotenv from 'dotenv'
+
 function Dashboard() {
     //Used for the logout button
     const navigate = useNavigate();

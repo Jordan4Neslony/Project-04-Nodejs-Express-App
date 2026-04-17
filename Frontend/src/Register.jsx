@@ -1,7 +1,7 @@
 import './Register.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import dotenv from 'dotenv'
+
 function Register() {
     const navigate = useNavigate();
     //Variables that signify the internal state of the Contact-Form is being updated.
