@@ -23,7 +23,7 @@ function Register() {
             setErrors({ username: '', password: '', repeatPassword: '' });
             setSuccess('');
             try {
-                const response = await fetch(process.env.REGISTRY_LINK, {
+                const response = await fetch(import.meta.env.VITE_REGISTRY_LINK, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
