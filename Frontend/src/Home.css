@@ -1,0 +1,115 @@
+.introduction-container {
+    background: hsl(0, 0%, 10%);
+    color: white;
+    max-height: 150px;
+    min-height: 50px;
+    max-width: 600px;
+    border-width: 10px;
+    border-style: double;
+    border-color: white;
+    border-radius: 10px;
+    margin: 0% 10% 1% 10%;
+    display: block;
+}
+
+.secondary-container {
+    background: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 90%);
+    max-height: 500px;
+    min-height: 50px;
+    max-width: 600px;
+    border-width: 10px;
+    border-style: double;
+    border-color: white;
+    border-radius: 10px;
+    margin: 0% 10% 1% 15%;
+    display: block;
+}
+
+.introduction-container h1 {
+    font-size: 40px !important;
+    margin-left: 2px;
+}
+
+.secondary-container h2 {
+    font-size: 30px !important;
+    margin-left: 2px;
+}
+.about-header{
+    color: hsl(0, 0%, 90%);
+    margin: 0% 10% 0% 10%;
+    display: block;
+}
+
+.about-container{
+    background: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 90%);
+    max-height: 500px;
+    min-height: 50px;
+    max-width: 600px;
+    border-width: 10px;
+    border-style: double;
+    border-color: white;
+    border-radius: 10px;
+    margin: 0% 10% 1% 10%;
+    display: block;
+}
+
+.about-container p{
+    margin-left: 2px;
+}
+
+.button-container {
+    display: flex;
+    margin: 0% 0% 0% 10%;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.login-header {
+    color: hsl(0, 0%, 90%);
+    margin: 0% 10% 0% 10%;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .introduction-container {
+        background: hsl(0, 0%, 10%);
+        color: white;
+        max-height: 150px;
+        min-height: 50px;
+        max-width: 400px;
+        min-width: 200px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+        border-radius: 10px;
+        margin: 0% 10% 2% 6%;
+        display: block;
+    }
+
+    .secondary-container {
+        background: hsl(0, 0%, 10%);
+        color: hsl(0, 0%, 90%);
+        max-height: 300px;
+        min-height: 50px;
+        max-width: 600px;
+        min-width: 300px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+        border-radius: 10px;
+        margin: 0% 10% 1% 10%;
+        display: block;
+    }
+
+    .introduction-container h1 {
+        font-size: 40px !important;
+    }
+
+    .secondary-container h2 {
+        font-size: 30px !important;
+    }
+}

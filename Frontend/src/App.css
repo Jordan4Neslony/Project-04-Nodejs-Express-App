@@ -1,0 +1,148 @@
+body {
+    background: hsl(0, 0%, 5%);
+    color: white;
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.dotted-spacer {
+    border-top: 3px dotted #ccc;
+    margin: 20px 0;
+}
+
+.lined-spacer {
+    border-top: 3px solid #ccc;
+    margin: 20px 0;
+}
+.top-lined-spacer {
+    border-top: 3px solid #ccc;
+}
+.top-dotted-spacer {
+    border-top: 3px dotted #ccc;
+}
+
+.left-vertical-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: hsl(0, 0%, 0%);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 90;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.right-vertical-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: hsl(0, 0%, 0%);
+    color: white;
+    position: fixed;
+    left: 95%;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 90;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.nav-list {
+  color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0% 0% 0% 6%;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 30px;
+    margin-top: 5%;
+    color: white;
+}
+
+.navigational-bar {
+    padding: 0.001rem 0 !important;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: -webkit-text-decoration 0.2s;
+    transition: text-decoration 0.2s;
+    transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#Row-Column-Layout img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    
+  }
+  
+  .nav-list li {
+    margin-bottom: 0px;
+    margin-right: 0;
+    color:white
+  }
+    
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    margin-left: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #Row-Column-Layout img {
+    width: 100%;
+    max-width: 80%;
+    height:fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+}

@@ -1,0 +1,62 @@
+.login-container {
+    background: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 90%);
+    max-height: 500px;
+    min-height: 50px;
+    max-width: 600px;
+    border-width: 10px;
+    border-style: double;
+    border-color: white;
+    border-radius: 10px;
+    margin: 0% 10% 1% 10%;
+    display: block;
+}
+
+.login-container h1 {
+    color: hsl(0, 0%, 90%);
+    display: block;
+    margin-left: 2px;
+}
+.login-container p{
+    font-size: smaller;
+    margin-left: 5%;
+}
+.login-contents{
+    margin-left: 20px;
+    margin-top: 5px;
+    color: hsl(0, 0%, 90%);
+    display: block;
+}
+
+.text-input{
+    margin-left: 20px;
+    display: block;
+    max-width: 90%;
+}
+
+.login-button{
+    margin-top: 10px;
+}
+/*margin: 0% 10% 0% 10%;*/
+
+.error-message {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    border-left: 4px solid #ff6b6b;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+}
+
+.success-message {
+    color: #51cf66;
+    background-color: rgba(81, 207, 102, 0.1);
+    border-left: 4px solid #51cf66;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+}
