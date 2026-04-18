@@ -67,10 +67,6 @@
     align-self: flex-end;
 }
 
-.register-button{
-    margin-top: 10px;
-}
-
 .error-message {
     color: #ff6b6b;
     background-color: rgba(255, 107, 107, 0.1);
@@ -80,7 +76,6 @@
     margin-right: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
-    border-radius: 4px;
     font-size: 14px;
     display: block;
 }
@@ -91,7 +86,10 @@
     border-left: 4px solid #51cf66;
     padding: 10px 15px;
     margin: 10px 20px;
-    border-radius: 4px;
     font-size: 14px;
     display: block;
+}
+
+.register-button{
+    margin-top: 10px;
 }

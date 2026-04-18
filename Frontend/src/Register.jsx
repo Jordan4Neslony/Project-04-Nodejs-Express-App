@@ -4,20 +4,21 @@ import { useNavigate } from 'react-router-dom';
 
 function Register() {
     const navigate = useNavigate();
-    //Variables that signify the internal state of the Contact-Form is being updated.
+    //Variables that signify the registry inputs are being typed in
         const [formData, setFormData] = useState({
             username: '',
             password: '',
             repeatPassword: ''
         });
-        
+        //Variables to set errors to the corresponding input box.
         const [errors, setErrors] = useState({
             username: '',
             password: '',
             repeatPassword: ''
         });
+        //Variable to set the success of the registering
         const [success, setSuccess] = useState('');
-        
+        //To send data to the backend for registering
         const sendData = async (e) => {
             e.preventDefault();
             setErrors({ username: '', password: '', repeatPassword: '' });
@@ -33,7 +34,7 @@ function Register() {
                 const result = await response.json();
                 
                 if (!response.ok) {
-                    // Categorize error messages by field
+                    // Categorizes error messages by field
                     const errorMessage = result.message;
                     let newErrors = { username: '', password: '', repeatPassword: '' };
                     
@@ -54,10 +55,10 @@ function Register() {
                     setErrors(newErrors);
                 } else {
                     setSuccess(result.message);
-                    // Save username to localStorage
+                    // Saves username to localStorage
                     localStorage.setItem('username', formData.username);
                     setFormData({ username: '', password: '', repeatPassword: '' });
-                    // Redirect to dashboard after successful registration
+                    // Redirects to dashboard after successful registration
                     setTimeout(() => navigate('/dashboard'), 1500);
                 }
                 console.log('Response:', result);

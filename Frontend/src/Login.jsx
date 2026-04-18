@@ -5,15 +5,16 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
     const navigate = useNavigate();
     
-    //Variables that signify the internal state of the Contact-Form is being updated.
+    //Variables that are used to track the data in the input boxes.
     const [formData, setFormData] = useState({
         username: '',
         password: '',
     });
-    
+    //Error variable is used set the error message by the input box.
     const [error, setError] = useState('');
+    //Success variable is used set the success message by the input box.
     const [success, setSuccess] = useState('');
-    
+    //Sends data to the backend to see if the user is valid to log in.
     const sendData = async (e) => {
         e.preventDefault();
         setError('');
